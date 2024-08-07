@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #8B008B, #4B0082, #2e003e);
+    overflow: hidden;
+}
+
+.header-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.palm {
+    margin-left: -5px;
+}
+
+.peace {
+    margin-left: -8px;
+}
+
+.icon img {
+    width: 40px;
+}
+
+.btn {
+    background-color: transparent;
+}
+
+.heading {
+    color: white;
+    margin-left: 50px;
+}
+
+.one, .two, .three {
+    display: flex;
+    width: 33.33%;
+}
+
+.one {
+    justify-content: flex-start;
+    margin-left: 13px;
+}
+
+.two {
+    justify-content: center;
+}
+
+.three {
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.three col{
+    padding: 0;
+}
+.middle {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.middle img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.words {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    word-spacing: 20px;
+    color: white;
+}
+
+.choice {
+    display: flex;
+    justify-content: space-evenly;
+    visibility: visible;
+    position: relative;
+}
+
+.choice img {
+    height: 130px;
+    width: 125px;
+    z-index: 1;
+}
+
+
+
+.ascuns {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    margin-top: -155px;
+}
+
+.ascuns img {
+    height: 130px;
+    width: 125px;
+}
+
+.unu {
+    margin-right: -125px;
+}
+
+.trei {
+    margin-left: -125px;
+}
+
+.supra {
+    display: flex;
+    justify-content: center;
+    margin-top: -210px;
+    font-size: 25px;
+    visibility: hidden;
+    color: white;
+}
+
+.after1 {
+    margin-left: -115px;
+    visibility: hidden;
+}
+
+.after2 {
+    margin-left: -84px;
+    visibility: hidden;
+}
+
+.after3 {
+    margin-left: -30px;
+}
+
+.choiceBot {
+    display: flex;
+    justify-content: center;
+    margin-top: -210px;
+    visibility: hidden;
+}
+
+.choiceBot img {
+    height: 130px;
+    width: 125px;
+}
+
+.choice1 {
+    margin-right: -125px;
+}
+
+.choice3 {
+    margin-left: -125px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    color: white;
+}
+
+button {
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+h3 {
+    color: white;
+    margin: 0;
+}
+
+svg {
+    cursor: pointer;
+}
+
+#sidebar-active {
+    display: none;
+}
+
+nav a {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    height: 40px;
+    width: 70px;
+    border-radius: 5px;
+    align-self: center;
+}
+
+nav a:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 10;
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    opacity: 90%;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
+}
+
+.close-sidebar-button {
+    padding: 20px;
+}
+
+.open-sidebar-button {
+    display: block;
+    padding-top: 20px;
+    
+}
+
+nav {
+    width: 50px;
+    display: flex;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+#sidebar-active:checked ~ .links-container {
+    left: 0;
+}
+
+#sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+
+@media (max-width: 768px) {
+    .middle img {
+        width: 80px;
+    }
+
+    .words {
+        font-size: 20px;
+    }
+
+    .choice img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .ascuns img {
+        height: 100px;
+        width: 100px;
+        visibility: hidden;
+        margin-top: 30px;
+    }
+    .unu {
+        margin-right: -100px;
+    }
+    .trei {
+        margin-left: -100px;
+    }
+
+    .supra {
+        font-size: 20px;
+    }
+
+    .choiceBot img {
+        height: 100px;
+        width: 100px;
+        visibility: hidden;
+        margin-top: 50px;
+    }
+    .choice3 {
+        margin-left: -100px;
+    }
+    .choice1 {
+        margin-right: -100px;
+    }
+
+    .supra {
+        padding-top: 17px;
+    }
+    footer{
+        margin-bottom: 5%;
+    }
+    .after1{
+        margin-left: -95px;
+    }
+    .after2 {
+        margin-left: -73px;
+    }
+}
